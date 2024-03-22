@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="905becb2c4c6475dbe98fe6ad16a3ba4" Name="Diagram1">
+        <EntityTypeShape EntityType="Krasnoperov_YP_day1Model.agent" Width="1.5" PointX="3.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Krasnoperov_YP_day1Model.apartment_demands" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Krasnoperov_YP_day1Model.apartment" Width="1.5" PointX="3" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Krasnoperov_YP_day1Model.client" Width="1.5" PointX="3.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="Krasnoperov_YP_day1Model.district" Width="1.5" PointX="0.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Krasnoperov_YP_day1Model.house_demands" Width="1.5" PointX="6" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Krasnoperov_YP_day1Model.house" Width="1.5" PointX="3" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Krasnoperov_YP_day1Model.land_demands" Width="1.5" PointX="6" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Krasnoperov_YP_day1Model.land" Width="1.5" PointX="3" PointY="32" IsExpanded="true" />
+        <EntityTypeShape EntityType="Krasnoperov_YP_day1Model.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="Krasnoperov_YP_day1Model.FK_apartment_demands_agents" ManuallyRouted="false" />
+        <AssociationConnector Association="Krasnoperov_YP_day1Model.FK_house_demands_agents" ManuallyRouted="false" />
+        <AssociationConnector Association="Krasnoperov_YP_day1Model.FK_land_demands_agents" ManuallyRouted="false" />
+        <AssociationConnector Association="Krasnoperov_YP_day1Model.FK_apartment_demands_clients" ManuallyRouted="false" />
+        <AssociationConnector Association="Krasnoperov_YP_day1Model.FK_apartment_demands_districts" ManuallyRouted="false" />
+        <AssociationConnector Association="Krasnoperov_YP_day1Model.FK_apartments_districts" ManuallyRouted="false" />
+        <AssociationConnector Association="Krasnoperov_YP_day1Model.FK_house_demands_clients" ManuallyRouted="false" />
+        <AssociationConnector Association="Krasnoperov_YP_day1Model.FK_land_demands_clients" ManuallyRouted="false" />
+        <AssociationConnector Association="Krasnoperov_YP_day1Model.FK_house_demands_districts" ManuallyRouted="false" />
+        <AssociationConnector Association="Krasnoperov_YP_day1Model.FK_houses_districts" ManuallyRouted="false" />
+        <AssociationConnector Association="Krasnoperov_YP_day1Model.FK_land_demands_districts" ManuallyRouted="false" />
+        <AssociationConnector Association="Krasnoperov_YP_day1Model.FK_lands_districts" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

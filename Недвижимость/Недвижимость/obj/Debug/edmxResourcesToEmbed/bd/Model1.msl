@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Krasnoperov_YP_day1ModelContainer" CdmEntityContainer="Krasnoperov_YP_day1Entities">
+    <EntitySetMapping Name="agents">
+      <EntityTypeMapping TypeName="Krasnoperov_YP_day1Model.agent">
+        <MappingFragment StoreEntitySet="agents">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DealShare" ColumnName="DealShare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="apartment_demands">
+      <EntityTypeMapping TypeName="Krasnoperov_YP_day1Model.apartment_demands">
+        <MappingFragment StoreEntitySet="apartment-demands">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Address_City" ColumnName="Address_City" />
+          <ScalarProperty Name="IdDistricts" ColumnName="IdDistricts" />
+          <ScalarProperty Name="Address_House" ColumnName="Address_House" />
+          <ScalarProperty Name="Address_Number" ColumnName="Address_Number" />
+          <ScalarProperty Name="MinPrice" ColumnName="MinPrice" />
+          <ScalarProperty Name="MaxPrice" ColumnName="MaxPrice" />
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="MinArea" ColumnName="MinArea" />
+          <ScalarProperty Name="MaxArea" ColumnName="MaxArea" />
+          <ScalarProperty Name="MinRooms" ColumnName="MinRooms" />
+          <ScalarProperty Name="MaxRooms" ColumnName="MaxRooms" />
+          <ScalarProperty Name="MinFloor" ColumnName="MinFloor" />
+          <ScalarProperty Name="MaxFloor" ColumnName="MaxFloor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="apartments">
+      <EntityTypeMapping TypeName="Krasnoperov_YP_day1Model.apartment">
+        <MappingFragment StoreEntitySet="apartments">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Address_City" ColumnName="Address_City" />
+          <ScalarProperty Name="IdDistricts" ColumnName="IdDistricts" />
+          <ScalarProperty Name="Address_House" ColumnName="Address_House" />
+          <ScalarProperty Name="Address_Number" ColumnName="Address_Number" />
+          <ScalarProperty Name="Coordinate_latitude" ColumnName="Coordinate_latitude" />
+          <ScalarProperty Name="Coordinate_longitude" ColumnName="Coordinate_longitude" />
+          <ScalarProperty Name="TotalArea" ColumnName="TotalArea" />
+          <ScalarProperty Name="Rooms" ColumnName="Rooms" />
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clients">
+      <EntityTypeMapping TypeName="Krasnoperov_YP_day1Model.client">
+        <MappingFragment StoreEntitySet="clients">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="districts">
+      <EntityTypeMapping TypeName="Krasnoperov_YP_day1Model.district">
+        <MappingFragment StoreEntitySet="districts">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="area" ColumnName="area" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="house_demands">
+      <EntityTypeMapping TypeName="Krasnoperov_YP_day1Model.house_demands">
+        <MappingFragment StoreEntitySet="house-demands">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Address_City" ColumnName="Address_City" />
+          <ScalarProperty Name="Address_Street" ColumnName="Address_Street" />
+          <ScalarProperty Name="Address_House" ColumnName="Address_House" />
+          <ScalarProperty Name="Address_Number" ColumnName="Address_Number" />
+          <ScalarProperty Name="MinPrice" ColumnName="MinPrice" />
+          <ScalarProperty Name="MaxPrice" ColumnName="MaxPrice" />
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="MinFloors" ColumnName="MinFloors" />
+          <ScalarProperty Name="MaxFloors" ColumnName="MaxFloors" />
+          <ScalarProperty Name="MinArea" ColumnName="MinArea" />
+          <ScalarProperty Name="MaxArea" ColumnName="MaxArea" />
+          <ScalarProperty Name="MinRooms" ColumnName="MinRooms" />
+          <ScalarProperty Name="MaxRooms" ColumnName="MaxRooms" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="houses">
+      <EntityTypeMapping TypeName="Krasnoperov_YP_day1Model.house">
+        <MappingFragment StoreEntitySet="houses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Address_City" ColumnName="Address_City" />
+          <ScalarProperty Name="IdDistricts" ColumnName="IdDistricts" />
+          <ScalarProperty Name="Address_House" ColumnName="Address_House" />
+          <ScalarProperty Name="Address_Number" ColumnName="Address_Number" />
+          <ScalarProperty Name="Coordinate_latitude" ColumnName="Coordinate_latitude" />
+          <ScalarProperty Name="Coordinate_longitude" ColumnName="Coordinate_longitude" />
+          <ScalarProperty Name="TotalFloors" ColumnName="TotalFloors" />
+          <ScalarProperty Name="TotalArea" ColumnName="TotalArea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="land_demands">
+      <EntityTypeMapping TypeName="Krasnoperov_YP_day1Model.land_demands">
+        <MappingFragment StoreEntitySet="land-demands">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Address_City" ColumnName="Address_City" />
+          <ScalarProperty Name="Address_Street" ColumnName="Address_Street" />
+          <ScalarProperty Name="Address_House" ColumnName="Address_House" />
+          <ScalarProperty Name="Address_Number" ColumnName="Address_Number" />
+          <ScalarProperty Name="MinPrice" ColumnName="MinPrice" />
+          <ScalarProperty Name="MaxPrice" ColumnName="MaxPrice" />
+          <ScalarProperty Name="AgentId" ColumnName="AgentId" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="MinArea" ColumnName="MinArea" />
+          <ScalarProperty Name="MaxArea" ColumnName="MaxArea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lands">
+      <EntityTypeMapping TypeName="Krasnoperov_YP_day1Model.land">
+        <MappingFragment StoreEntitySet="lands">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Address_City" ColumnName="Address_City" />
+          <ScalarProperty Name="IdDistricts" ColumnName="IdDistricts" />
+          <ScalarProperty Name="Address_House" ColumnName="Address_House" />
+          <ScalarProperty Name="Address_Number" ColumnName="Address_Number" />
+          <ScalarProperty Name="Coordinate_latitude" ColumnName="Coordinate_latitude" />
+          <ScalarProperty Name="Coordinate_longitude" ColumnName="Coordinate_longitude" />
+          <ScalarProperty Name="TotalArea" ColumnName="TotalArea" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Krasnoperov_YP_day1Model.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
